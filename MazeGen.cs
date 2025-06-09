@@ -37,29 +37,6 @@ public class MazeGen : MonoBehaviour
         rooms = new List<Room>();
         GenerateMaze(0, w, 0, h);
         DrawMaze();
-
-/**
-        foreach (Room r in rooms)
-        {
-            Debug.Log("Room Start");
-            Debug.Log(r.x1);
-            Debug.Log(r.x2);
-            Debug.Log(r.y1);
-            Debug.Log(r.y2);
-        }
-**/
-
-/**
-        for (int i = 0; i < w; i++)
-        {
-            string logStr = "";
-            for (int j = 0; j < h; j++)
-            {
-                logStr += maze[i, j] ? "1" : "0";
-            }
-            Debug.Log(logStr);
-        }
-**/
     }
 
     void GenerateMaze(int x1, int x2, int y1, int y2)
